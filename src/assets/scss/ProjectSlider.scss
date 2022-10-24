@@ -1,0 +1,263 @@
+.project-slider{
+  position: relative;
+  height: 120vh;
+  background: url('https://ppt.cc/fFtsTx@.png') no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  border-radius: 0 0 49px 49px;
+  overflow: hidden;
+  .cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    backdrop-filter: blur(10px);
+  }
+  .carousel{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .carousel-inner{
+      padding: 10rem;
+      height: 100%;
+      .carousel-item{
+        position: relative;
+        height: 100%;
+        .index-container{
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: translateX(150%);
+          width: 2.7rem;
+          height: 2.35rem;
+          .current-index{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            font-size: .8rem;
+            font-weight: 600;
+            letter-spacing: .111rem;
+            .current{
+              position: absolute;
+              top: -5px;
+              left: -5px;
+            }
+            .total{
+              position: absolute;
+              bottom: -5px;
+              right: -5px;
+            }
+            .line{
+              position: absolute;
+              left: -15%;
+              top: 50%;
+              width: 120%;
+              height: 2px;
+              background: #26C6D0;
+              transform: translateY(-50%);
+              transform: rotate(-45deg);
+            }
+          }
+        }
+        .img{
+          position: absolute;
+          width: 50%;
+          top: 50%;
+          left: 0;
+          transform: translate(0%, -50%);
+          padding: 1.5rem;
+          overflow: hidden;
+          img{
+            border-radius: 1.5rem;
+          }
+        }
+        .content{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(0, -50%);
+          width: 50%;
+          padding: 1.5rem;
+          color: #fff;
+          align-self: center;
+          .top{
+            margin-bottom: 1rem;
+            font-size: .8rem;
+            font-weight: 700;
+            letter-spacing: .111rem;
+          }
+          .title-container{
+            margin-bottom: 2.5rem;
+            position: relative;
+            margin-bottom: 0;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: .1818rem;
+            h4{
+              position: relative;
+              z-index: 10;
+              .dot{
+                display: inline-block;
+                width: .5rem;
+                height: .5rem;
+                margin-left: 1.1rem;
+                border-radius: 50%;
+                background: #EE6C8A;
+              }
+            }
+            .line{
+              position: absolute;
+              left: -.5rem;
+              bottom: .28rem;
+              width: 90%;
+              height: .3rem;
+              background: #26C6D0;
+            }
+          }
+          .description{
+            font-size: .8rem;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+    .carousel-control-prev{
+      opacity: 1;
+      .carousel-control-prev-icon{
+        width: 2.6rem;
+        height: 2.6rem;
+        position: relative;
+        background: #26C6D0;
+        border-radius: 50%;
+        .bi{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          &::before{
+            line-height: 2.5;
+          }
+        }
+      }
+    }
+    .carousel-control-next{
+      opacity: 1;
+      .carousel-control-next-icon{
+        width: 2.6rem;
+        height: 2.6rem;
+        position: relative;
+        background: #26C6D0;
+        border-radius: 50%;
+        .bi{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          &::before{
+            line-height: 2.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .project-slider{
+    .carousel{
+      .carousel-inner{
+        padding: 5rem;
+        .carousel-item{
+          .content{
+            .title-container{
+              letter-spacing: .1rem;
+              h4{
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .project-slider{
+    .carousel{
+      .carousel-inner{
+        .carousel-item{
+          .img{
+            width: 60%;
+            left: 50%;
+            transform: translate(-50%, -80%);
+          }
+          .content{
+            width: 100%;
+            top: 60%;
+            transform: translate(-50%, 0);
+            text-align: center;
+          }
+        }
+      }
+      .carousel-control-prev{
+        justify-content: flex-start;
+      }
+      .carousel-control-next{
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .project-slider{
+    .carousel{
+      .carousel-inner{
+        .carousel-item{
+          .img{
+            width: 80%;
+            transform: translate(-50%, -90%);
+          }
+          .content{
+            padding: 0;
+            top: 55%;
+            transform: translate(-50%, 0);
+            .description{
+              font-size: .7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .project-slider{
+    .carousel{
+      .carousel-inner{
+        padding: 1.5rem;
+        .carousel-item{
+          .img{
+            transform: translate(-50%, -100%);
+          }
+          .index-container{
+            transform: translateX(0);
+          }
+          .content{
+            padding: 0;
+            top: 55%;
+            transform: translate(-50%, -10%);
+            .title-container{
+              .line{
+                left: 0;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

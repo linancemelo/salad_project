@@ -1,0 +1,58 @@
+.experience{
+  padding: 16rem 0 10rem;
+  text-align: center;
+  background: #fff;
+  .title-container{
+    margin-top: 3.5rem;
+    .title{
+      margin-bottom: 0;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: .1818rem;
+      color: #262626;
+      .dot{
+        display: inline-block;
+        width: .5rem;
+        height: .5rem;
+        margin-left: 1.1rem;
+        border-radius: 50%;
+        background: #EE6C8A;
+      }
+    }
+    img{
+      margin: 0 -15px;
+    }
+  }
+  .description{
+    margin-top: 2.2rem;
+    margin-bottom: 3rem;
+    padding: 0 10.8rem;
+    color: #262626;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .experience{
+    padding-bottom: 5rem;
+    .description{
+      padding: 0 5rem;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .experience{
+    padding-top: 10rem;
+    .title-container{
+      img{
+        &:nth-child(3){
+          display: none;
+        }
+      }
+    }
+    .description{
+      padding: 0 5%;
+    }
+  }
+}

@@ -1,0 +1,163 @@
+.wrap{
+  position: relative;
+  background: #f2f2f2;
+  overflow: hidden;
+  .head{
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    z-index: 100;
+    .btn{
+      background: linear-gradient(90deg, #4EE5EA 3.94%, #26D0A8 94.73%);
+      border-radius: 1.2rem;
+      color: #fff;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .057rem;
+    }
+    .toggle{
+      width: 1.5rem;
+      height: 1.1rem;
+      margin-left: 2.2rem;
+      align-self: center;
+      cursor: pointer;
+      &:hover{
+        span{
+          background: #26C6D0;
+        }
+      }
+      span{
+        display: block;
+        width: 1.5rem;
+        height: 3px;
+        background: #fff;
+        border-radius: 1.5px;
+        &:nth-child(2){
+          margin: .3rem 0;
+        }
+        &:last-child{
+          width: 1.3rem;
+          margin-left: .2rem;
+        }
+      }
+    }
+  }
+  .intro{
+    position: relative;
+    width: 100%;
+    height: 47rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: url('https://s3-alpha-sig.figma.com/img/1856/fc1e/f5ffda7a2d76d9a4cce95119f1b2cc32?Expires=1667174400&Signature=MMx4qWSb5jcCz-0McHZh9lseUWIJqiQLiUTQggZdD26y3qoIP6NtTOXuBBOLlFFuphJ~ESj5-Igp1bjw-MNzzQku49nn3KFOfAtQNXVx5wwRzZzkgPj4s5tuhpGPJMkdvs6moFqrdwXfQUH7R1C~WYXOkUHBJpMIG2yEkF5CU7AcxYwKsCqAZCak6s~PIYAl4NCh4uhMYUPO1Qhp4U~43WTS6FxIv8EMK4yYFN1H3HIcbfGAs49fnBEH20ecToNVMCxcF-8cYnlo4tR3f6NM0e119PDMOb1OdyQ0UVLqCHqk692JF42~Dl7~758dMtUnVPT87fqTv7r0OrasdaWdlg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA') no-repeat;
+    background-position: 58% 10%;
+    overflow: hidden;
+    .cover{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .3);
+    }
+    .logo{
+      position: absolute;
+      left: 16.32%;
+      top: 9rem;
+      max-width: 9.9rem;
+    }
+    .sideTxt{
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: -4.515rem;
+      top: 18.6rem;
+      transform: rotate(-90deg);
+      .line{
+        width: 5.515rem;
+        height: .1rem;
+        margin-right: 1.225rem;
+        background: #fff;
+        z-index: 10;
+      }
+      p{
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: .11rem;
+        z-index: 10;
+      }
+    }
+    .content{
+      position: absolute;
+      top: 15rem;
+      left: 16.32%;
+      p{
+        position: relative;
+        line-height: 3.5rem;
+        color: #fff;
+        font-size: 1.9rem;
+        font-weight: 700;
+        letter-spacing: .40833rem;
+        z-index: 10;
+      }
+      .line{
+        position: absolute;
+        bottom: 1.5rem;
+        left: -.5rem;
+        width: 100%;;
+        height: .2rem;
+        border: .4rem solid #26C6D0;
+      }
+      .dot{
+        position: absolute;
+        bottom: 2rem;
+        right: -0.6rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: #EE6C8A;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrap{
+    .intro{
+      height: 100vh;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      .logo{
+        top: 11rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .content{
+        top: 19rem;
+        left: 50%;
+        transform: translateX(-50%);
+        p{
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          text-align: center;
+        }
+        .line{
+          border: .2rem solid #26C6D0
+        }
+        .dot{
+          right: 0
+        }
+      }
+      .sideTxt{
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrap{
+    .head{
+      right: 2rem;
+    }
+  }
+}

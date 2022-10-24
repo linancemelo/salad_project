@@ -1,0 +1,259 @@
+.service{
+  padding: 16rem 0 18.5rem;
+  text-align: center;
+  background: #26C6D0;
+  border-top-left-radius: 1.5rem;
+  .title-container{
+    .title{
+      margin-bottom: 0;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: .1818rem;
+      color: #fff;
+      .dot{
+        display: inline-block;
+        width: .5rem;
+        height: .5rem;
+        margin-left: 1.1rem;
+        border-radius: 50%;
+        background: #EE6C8A;
+      }
+    }
+    img{
+      margin: 0 -3px;
+    }
+  }
+  .description{
+    margin-top: 2.2rem;
+    margin-bottom: 3rem;
+    padding: 0 10.8rem;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .more{
+    .btn{
+      position: relative;
+      padding: 1.65rem 4.55rem 1.65rem 1.2rem;
+      background: #585880;
+      border-radius: 1px;
+      color: #fff;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .11rem;
+      .line{
+        position: absolute;
+        top: 50%;
+        right: 1.2rem;
+        width: 2.6rem;
+        height: .1rem;
+        background: #fff;
+      }
+    }
+  }
+  .service-item{
+    padding: 4.25rem 7.65rem;
+    .item-icon{
+      width: 5.4rem;
+      height: 5.4em;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .item-name{
+      margin: 1rem 0;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: .1rem;
+    }
+    .item-description{
+      margin-bottom: 1.5rem;
+      color: #fff;
+      font-weight: 300;
+      font-size: normal;
+      font-size: .8rem;
+      letter-spacing: 1px;
+    }
+    .item-more{
+      margin-bottom: 3rem;
+      border: 2px solid #fff;
+      border-radius: 1.5rem;
+      padding: 1rem 1.7rem;
+      color: #fff;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .111rem;
+    }
+  }
+  .view-more{
+    position: relative;
+    margin-top: .85rem;
+    a{
+      position: relative;
+      text-decoration: none;
+      color: #fff;
+      font-size: .9rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      z-index: 2;
+    }
+    .line{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: .1rem;
+      width: 50%;
+      height: 0.5rem;
+      background: #FFBC58;
+    }
+
+  }
+  .founder{
+    position: absolute;
+    display: flex;
+    width: 93.5%;
+    padding: 6.86rem 3.5rem;
+    margin-top: 3.5rem;
+    border-radius: 1.5rem;
+    border-top-left-radius: 0;
+    overflow: hidden;
+    background: url('https://ppt.cc/fZilux@.png') no-repeat;
+    background-size: cover;
+    .info{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .info-img{
+        // margin: 0 auto 2rem;
+        width: 10.2rem;
+        height: 10.2rem;
+        margin-bottom: 2rem;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      h5{
+        margin-bottom: .4rem;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+      p{
+        color: #fff;
+        font-size: .8rem;
+        font-style: italic;
+        letter-spacing: 2px;
+      }
+    }
+    .quote{
+      position: relative;
+      width: 65%;
+      .top-icon{
+        position: absolute;
+        left: 50%;
+        top: -10%;
+        transform: translateX(-50%);
+        img{
+          margin-right: .5rem;
+        }
+      }
+      p{
+        position: absolute;
+        top: 20%;
+        left: 0;
+        line-height: 2.4rem;
+        color: #fff;
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        text-align: start;
+        span{
+          color: #FFBC58 !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .service{
+    .founder{
+      .quote{
+        p{
+          left: 20%;
+          font-size: .9rem;
+          line-height: 1.5rem;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .service{
+    padding-top: 18rem;
+    .description{
+      padding: 0 5rem;
+    }
+    .service-item{
+      padding: 3rem 4rem;
+    }
+    .founder{
+      padding: 5rem 2.5rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .service{
+    .view-more{
+      .line{
+        width: 60%;
+      }
+    }
+    .founder{
+      .quote{
+        .top-icon{
+          display: none;
+        }
+        p{
+          top: 5%;
+          font-size: .8rem;
+        }
+      }
+      padding: 4rem 1.5rem
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .service{
+    .description{
+      padding: 0 5%;
+    }
+    .service-item{
+      padding: 3rem 5%;
+    }
+    .view-more{
+      .line{
+        width: 80%;
+      }
+    }
+    .founder{
+      .info{
+        .info-img{
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+      .quote{
+        p{
+          top: .5rem;
+          line-height: 1.2rem;
+          font-size: .7rem;
+        }
+      }
+    }
+  }
+}

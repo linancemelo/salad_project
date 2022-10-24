@@ -1,0 +1,210 @@
+.appear{
+  animation: appear .5s linear;
+}
+@keyframes appear{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.menu-container{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 47rem;
+  background: linear-gradient(180deg, #585880 3.61%, #26C6D0 95.7%);
+  z-index: 1000;
+  .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://s3-alpha-sig.figma.com/img/1856/fc1e/f5ffda7a2d76d9a4cce95119f1b2cc32?Expires=1667174400&Signature=MMx4qWSb5jcCz-0McHZh9lseUWIJqiQLiUTQggZdD26y3qoIP6NtTOXuBBOLlFFuphJ~ESj5-Igp1bjw-MNzzQku49nn3KFOfAtQNXVx5wwRzZzkgPj4s5tuhpGPJMkdvs6moFqrdwXfQUH7R1C~WYXOkUHBJpMIG2yEkF5CU7AcxYwKsCqAZCak6s~PIYAl4NCh4uhMYUPO1Qhp4U~43WTS6FxIv8EMK4yYFN1H3HIcbfGAs49fnBEH20ecToNVMCxcF-8cYnlo4tR3f6NM0e119PDMOb1OdyQ0UVLqCHqk692JF42~Dl7~758dMtUnVPT87fqTv7r0OrasdaWdlg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA') no-repeat;
+    background-position: 58% 10%;
+    opacity: .2;
+  }
+  .top{
+    position: absolute;
+    width: 100%;
+    padding: 2.4rem 3.2rem;
+    z-index: 10;
+    .logo{
+      width: 7rem;
+      height: auto;
+    }
+    .btn{
+      width: 1.1rem;
+      height: 1.1rem;
+      color: #fff;
+      &:hover{
+        color: #26C6D0; 
+       }
+    }
+  }
+  .menu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    .about{
+      position: absolute;
+      top: 15.53%;
+      left: 9.79%;
+      width: 26.38%;
+      border-radius: 1.5rem;
+      background: #26C6D0;
+      overflow: hidden;
+      .content{
+        padding-top: 55.26%;
+        background: url('https://ppt.cc/ftFJzx@.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: .08;
+      }
+    }
+    .works{
+      position: absolute;
+      top: 42.76%;
+      left: 9.79%;
+      width: 26.38%;
+      background: #EE6C8A;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      .content{
+        padding-top: 84.21%;
+        background: url('https://ppt.cc/f7WKox@.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: .06;
+      }
+    }
+    .careers{
+      position: absolute;
+      top: 4.79%;
+      left: 39.09%;
+      width: 20.14%;
+      background: #E6A94E;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      .content{
+        padding-top: 148.27%;
+        background: url('https://ppt.cc/feZ2qx@.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: .1;
+      }
+    }
+    .insights{
+      position: absolute;
+      top: 52.78%;
+      left: 39.09%;
+      width: 20.14%;
+      background: #26D0A8;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      .content{
+        padding-top: 97.24%;
+        background: url('https://ppt.cc/ff4Pbx@.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: .08;
+      }
+    }
+    .services{
+      position: absolute;
+      top: 15.53%;
+      left: 62.15%;
+      width: 26.38%;
+      background: #585880;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      .content{
+        padding-top: 84.21%;
+        background: url('https://ppt.cc/fpEQYx@.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: .1;
+      }
+    }
+    .contact{
+      position: absolute;
+      top: 54.46%;
+      left: 62.15%;
+      width: 26.38%;
+      background: #fff;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      .content{
+        padding-top: 55.26%;
+        opacity: .08;
+      }
+    }
+  }
+  .menu-list{
+    display: none;
+    position: absolute;
+    top: 18%;
+    width: 100%;
+    height: 100%;
+    ul{
+      padding: 0 1rem;
+      li{
+        margin-bottom: .5rem;
+        color: #fff;
+        text-align: center;
+        border-radius: 1.5rem;
+        background: rgba(0, 201, 212, .5);
+        font-weight: 600;
+        cursor: pointer;
+        &:hover{
+          color: #26C6D0;
+          background: rgba(255, 255, 255, .8);
+        }
+      }
+    }
+  }
+}
+.title-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  .img{
+    align-self: center;
+  }
+  .title{
+    align-self: center;
+    .title-top{
+      color: #fff;
+      font-size: .7rem;
+      letter-spacing: .09rem;
+    }
+    .title-bottom{
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: .1818rem;
+      .dot{
+        display: inline-block;
+        width: .5rem;
+        height: .5rem;
+        margin-left: .5rem;
+        border-radius: 50%;
+        background: #EE6C8A;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .menu-container{
+    .menu{
+      display: none;
+    }
+    .menu-list{
+      display: block
+    }
+  }
+}
